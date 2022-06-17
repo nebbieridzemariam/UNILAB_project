@@ -1,0 +1,55 @@
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+#menuToggle {
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#burgerNavigation a {
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#burgerNavigation a:hover {
+  color: tomato;
+}
+
+/*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+#burgerNavigation {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  padding: 50px;
+  padding-top: 125px;
+  z-index: 10;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#burgerNavigation li {
+  padding: 10px 0;
+  font-size: 22px;
+}

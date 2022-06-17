@@ -31,16 +31,53 @@
       </div>
     </header>
     <section class="worldnews">
-      <div class="worldnewsimg"></div>
-      <div class="overlay_text flex">
-        <h2 class="contentheader">WORLD NEWS</h2>
-        <hr id="newhr" />
-        <p class="content">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet,
-          laudantium sed commodi odio deleniti nihil. Dolores cum itaque
-          molestiae nobis assumenda! Numquam
-        </p>
-        <a href="#"><img src="./images/user-2.png" alt="#" /></a>
+      <div class="worldnewsheader flex">
+        <div class="leftbox flex">
+          <a href="index.html"><img src="./images/home.png" alt="" /></a>
+          <a href="#" class="smalltitle">STORY</a>
+          <a href="#" class="smalltitle"> /</a>
+          <a href="#" class="smalltitle"> WORLD NEWS</a>
+        </div>
+        <div class="rightbox">
+          <a href="#"> <img src="./images/filter.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="worldnewsimg">
+        <div class="overlay_text flex">
+          <h2 class="contentheader">WORLD NEWS</h2>
+          <hr id="newhr" />
+          <p class="content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet,
+            laudantium sed commodi odio deleniti nihil. Dolores cum itaque
+            molestiae nobis assumenda! Numquam
+          </p>
+          <a href="#"><img src="./images/user-2.png" alt="#" /></a>
+        </div>
+      </div>
+      <div class="morenews">
+        <form action="#" class="form flex">
+          <div class="input-field__wrapper flex">
+            <label for="date">Select a date</label>
+            <input
+              class="date-input"
+              type="date"
+              id="date"
+              placeholder="Select..."
+            />
+          </div>
+          <div class="input-field__wrapper flex">
+            <label for="free-text">Enter the first keywords</label>
+            <input class="free-input" type="text" id="free-text" />
+          </div>
+          <div class="input-field__wrapper flex">
+            <input
+              class="search-btn btn"
+              type="submit"
+              id="search"
+              value="SEARCH AN EVENT"
+            />
+          </div>
+        </form>
       </div>
     </section>
   </body>

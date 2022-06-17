@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/navigation.css" />
+    <script src="./scripts/main.js"></script>
     <title>Document</title>
   </head>
-  <body>
+  <body onload="loadBody()">
     <!-- header goes here -->
     <header>
       <nav class="navbar flex">
@@ -26,12 +28,24 @@
           <a href="#"><img src="./images/user.png" alt="image" /></a>
         </div>
       </nav>
-      <div class="flex header_line">
-        <div><img src="./images/menu-icon.png" alt="" /></div>
-        <div>
-          <span class="logotext">LOGO</span>
+
+      <nav id="burgerNavigation">
+          <ul id="burgerMenu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="posts.html">POSTS</a></li>
+            <li><a href="#">PHOTOS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
         </div>
-        <div><img src="./images/user.png" class="userimg" alt="image" /></div>
+      </nav>
+
+      <div class="flex header_line">
+        <div id="menuToggle" onclick="openBurgerMenu()">
+          <img src="./images/menu-icon.png" alt="" style="align-self: center;"/></div>
+        <div>
+          <span class="logotext" style="align-self: center;">LOGO</span>
+        </div>
+        <div><img src="./images/user.png" class="userimg" alt="image" style="align-self: center;"/></div>
       </div>
     </header>
     <!-- news content goes here -->
@@ -53,7 +67,7 @@
         </div>
         <br />
         <div class="learnmore">
-          <a href="#"><button class="learn">LEARN MORE</button></a>
+          <a href="more.html"> <button class="learn">LEARN MORE</button></a>
         </div>
       </div>
       <!-- more news goes here -->
@@ -337,5 +351,6 @@
         </div>
       </div>
     </footer>
+
   </body>
 </html>

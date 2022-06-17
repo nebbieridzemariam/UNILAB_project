@@ -49,6 +49,10 @@ li :hover {
   justify-content: space-around;
   padding-top: 2rem;
 }
+
+.header_line div {
+  display: flex;
+}
 .pinklogo span {
   color: #fa6980;
   font-family: "helvetica-bold";
@@ -97,6 +101,7 @@ li :hover {
   font-family: "helvetica-bold";
 }
 .learn {
+  cursor: pointer;
   padding: 1em 1.5em;
   background-color: #fa6980;
   color: #fff;
@@ -312,20 +317,63 @@ li :hover {
   background-size: cover;
   position: relative;
 }
+
 .overlay_text {
   position: absolute;
-  top: 10%;
+  top: 15%;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   max-height: 100%;
   min-height: 30rem;
-  padding: 5em;
+  padding: 4em;
 }
 #newhr {
   border: 2px solid #fa6980;
   width: 6em;
   border-radius: 0.5em;
 }
-.overlay_text h2 {
+.worldnewsheader {
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+.leftbox {
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+}
+.leftbox a {
+  opacity: 50%;
+}
+.leftbox a:hover {
+  opacity: 100%;
+}
+.newPosts {
+  padding: 1rem;
+  min-height: 5rem;
+}
+.postsContainer {
+  border: 1px solid #202124;
+  max-width: 100%;
+  height: 15rem;
+  flex-direction: column;
+  padding: 1em;
+}
+.author {
+  text-align: center;
+  width: 100%;
+  height: 30%;
+}
+.title {
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  font-weight: bold;
+}
+.postContent {
+  width: 100%;
+  height: 40%;
+  text-align: center;
 }
