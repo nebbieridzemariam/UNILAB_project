@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/media.css" />
     <link rel="stylesheet" href="./css/navigation.css" />
-    <script src="./scripts/main.js"></script>
+    <script src="./javascript/main.js"></script>
     <title>Document</title>
   </head>
   <body onload="loadBody()">
@@ -16,7 +16,7 @@
     <header>
       <nav class="navbar flex">
         <div class="pinklogo">
-        <a href="index.html">LOGO</a>
+          <a href="index.html">LOGO</a>
         </div>
         <div class="rightside flex">
           <ul class="flex">
@@ -25,27 +25,72 @@
             <li><a href="#">PHOTOS</a></li>
             <li><a href="#">CONTACT</a></li>
           </ul>
+
           <a href="#"><img src="./images/user.png" alt="image" /></a>
         </div>
       </nav>
 
       <nav id="burgerNavigation">
-          <ul id="burgerMenu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="posts.html">POSTS</a></li>
-            <li><a href="#">PHOTOS</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
+        <ul id="burgerMenu">
+          <li>
+            <img src="./images/home.png" alt="" /><a href="index.html">HOME</a>
+          </li>
+          <li>
+            <img src="./images/discover.png" alt="" /><a href="posts.html"
+              >POSTS</a
+            >
+          </li>
+          <li>
+            <img src="./images/photos.png" alt="" /><a href="#">PHOTOS</a>
+          </li>
+          <li><img src="./images/mail.png" alt="" /><a href="#">CONTACT</a></li>
+          <li>
+            <img src="./images/user.png" alt="" width="20px" /><a href="#"
+              >PROFILE</a
+            >
+          </li>
+        </ul>
+        <div class="footeritem">
+          <div class="footer_right flex">
+            <div class="footer_li flex">
+              <ul class="footer_list">
+                <li class="footer_list-item"><a href="index.html">home</a></li>
+                <li class="footer_list-item"><a href="#">discovery</a></li>
+                <li class="footer_list-item"><a href="#">photos</a></li>
+                <li class="footer_list-item"><a href="#">contact</a></li>
+              </ul>
+              <ul class="footer_list">
+                <li class="footer_list-item"><a href="#">about</a></li>
+                <li class="footer_list-item"><a href="#">help</a></li>
+                <li class="footer_list-item"><a href="#">terms</a></li>
+                <li class="footer_list-item"><a href="#">guidelines</a></li>
+              </ul>
+            </div>
+            <div class="contacticons flex">
+              <a href="#"><img src="./images/instagram.png" alt="image" /></a>
+              <a href="#"><img src="./images/twitter.png" alt="image" /></a>
+              <a href="#"><img src="./images/facebook.png" alt="image" /></a>
+              <a href="#"><img src="./images/web.png" alt="image" /></a>
+            </div>
+          </div>
         </div>
       </nav>
 
       <div class="flex header_line">
         <div id="menuToggle" onclick="openBurgerMenu()">
-          <img src="./images/menu-icon.png" alt="" style="align-self: center;"/></div>
-        <div>
-          <span class="logotext" style="align-self: center;">LOGO</span>
+          <img src="./images/menu-icon.png" alt="" style="align-self: center" />
         </div>
-        <div><img src="./images/user.png" class="userimg" alt="image" style="align-self: center;"/></div>
+        <div>
+          <span class="logotext" style="align-self: center">LOGO</span>
+        </div>
+        <div>
+          <img
+            src="./images/user.png"
+            class="userimg"
+            alt="image"
+            style="align-self: center"
+          />
+        </div>
       </div>
     </header>
     <!-- news content goes here -->
@@ -351,6 +396,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>

@@ -16,14 +16,14 @@
   user-select: none;
 }
 
-#burgerNavigation a {
+#burgerMenu a {
   text-decoration: none;
   color: #232323;
 
   transition: color 0.3s ease;
 }
 
-#burgerNavigation a:hover {
+#burgerMenu a:hover {
   color: tomato;
 }
 
@@ -35,7 +35,7 @@
   position: absolute;
   width: 80%;
   height: 100%;
-  padding: 50px;
+  padding: 10%;
   padding-top: 125px;
   z-index: 10;
   background: #ededed;
@@ -52,4 +52,36 @@
 #burgerNavigation li {
   padding: 10px 0;
   font-size: 22px;
+}
+
+#burgerNavigation .footer_list li {
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+#burgerNavigation .footer_right {
+  flex-direction: column;
+  height: 20rem;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.footeritem {
+  height: 40%;
+  background-color: #a6adb4;
+  width: 80vw;
+  transform: translateX(-10vw);
+  position: absolute;
+  bottom: 0;
+}
+
+#burgerNavigation .contacticons {
+  margin-left: 6vw;
+}
+
+#burgerNavigation .footer_li {
+  margin-left: 5vw;
+  margin-top: 15vw;
 }
