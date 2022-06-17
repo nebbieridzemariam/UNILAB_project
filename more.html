@@ -18,7 +18,7 @@
         <div class="rightside flex">
           <ul class="flex">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="#">DISCOVERY</a></li>
+            <li><a href="#">POSTS</a></li>
             <li><a href="#">PHOTOS</a></li>
             <li><a href="#">CONTACT</a></li>
           </ul>
@@ -26,7 +26,9 @@
         </div>
       </nav>
       <div class="flex more_header_line">
-        <div><img src="./images/go-back.png" alt="" /></div>
+        <div>
+          <a href="index.html"><img src="./images/go-back.png" alt="" /></a>
+        </div>
         <div><img src="./images/filter.png" class="userimg" alt="image" /></div>
       </div>
     </header>
@@ -54,9 +56,10 @@
           <a href="#"><img src="./images/user-2.png" alt="#" /></a>
         </div>
       </div>
-      <div class="morenews">
+      <!-- here's the search part -->
+      <div class="morenewsone searchpart">
         <form action="#" class="form flex">
-          <div class="input-field__wrapper flex">
+          <div class="input-field-container flex">
             <label for="date">Select a date</label>
             <input
               class="date-input"
@@ -65,20 +68,177 @@
               placeholder="Select..."
             />
           </div>
-          <div class="input-field__wrapper flex">
+          <div class="input-field-container flex">
             <label for="free-text">Enter the first keywords</label>
             <input class="free-input" type="text" id="free-text" />
           </div>
-          <div class="input-field__wrapper flex">
-            <input
-              class="search-btn btn"
-              type="submit"
-              id="search"
-              value="SEARCH AN EVENT"
-            />
+          <div class="input-field-container flex">
+            <input class="learn" type="submit" id="search" value="Search" />
           </div>
         </form>
       </div>
     </section>
+    <br />
+    <br />
+    <hr class="articleshr" />
+    <section class="usersarticles">
+      <div class="articleone flex">
+        <div class="flex imageandtitle">
+          <img src="./images/user-2.png" alt="image" id="avatarimage" />
+          <h3 class="black_headers">
+            Phasellus eu nulla malesuada, luctus diam.
+          </h3>
+        </div>
+        <div class="firstarticlecontent flex">
+          <p class="articlecontent">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Laudantium, earum deserunt in repellat omnis deleniti dolore nisi
+            sapiente distinctio, laborum officiis pariatur id debitis quibusdam
+            neque veritatis impedit rem assumenda. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Aperiam nisi minima sunt veniam iste
+            quo impedit consequatur esse recusandae delectus vero accusamus,
+            repellat similique quidem deserunt libero aut optio provident.
+          </p>
+          <p class="articlecontent">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+            temporibus omnis enim beatae animi! Maiores molestiae tempora,
+            accusamus ut pariatur mollitia tenetur ipsa voluptate voluptas
+            laborum repudiandae debitis nam corporis. Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Sint, quo id, accusamus totam ea
+            fugit, excepturi ullam magni eligendi dolores saepe maiores earum
+            ducimus. Et iusto odit illum doloremque placeat.
+          </p>
+        </div>
+        <div class="articletime flex">
+          <img src="./images/clock-icon.png" alt="image" />
+          <span>1h ago</span>
+        </div>
+      </div>
+      <hr class="articleshr" />
+      <div class="articletwo flex">
+        <img src="./images/article-elephant.jpg" alt="image" />
+        <div class="secondarticlecontent flex">
+          <p class="articlecontent">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit suscipit,
+            condimentum mauris convallis cras iaculis at tempus dignissim arcu,
+            sollicitudin posuere porta non tellus dictumst penatibus. Commodo
+            ante quis senectus quisque semper dapibus porttitor libero lacus
+            hendrerit volutpat, in cras a himenaeos leo ridiculus taciti
+            ultrices cursus mattis. Tempor mi fames senectus taciti condimentum
+            lacinia ante, non netus rhoncus eget habitant sollicitudin, cubilia
+            luctus consequat pharetra natoque porta. Sodales tristique habitasse
+            massa ultrices ligula semper interdum dictumst, at quis vel non
+            facilisis congue cursus neque mollis, pretium consequat suspendisse
+            imperdiet volutpat sollicitudin luctus.
+          </p>
+          <p class="articlecontent">
+            Convallis justo pulvinar commodo nisl auctor mus massa vehicula,
+            facilisis ac lacinia porttitor porta tellus aptent sem, inceptos
+            mattis cursus quis nascetur torquent cras. Nec sagittis auctor eros
+            class sodales nunc urna leo enim donec praesent id in, fermentum
+            tellus curae ullamcorper netus scelerisque ornare diam primis aptent
+            mus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+            quisquam nisi molestiae quos consectetur fugiat ex voluptatum ut
+            magnam. Dignissimos obcaecati reprehenderit rem quia accusantium ad
+            dicta nemo, ipsam quos. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Soluta, est eaque quas rerum assumenda cumque
+            quam, veritatis omnis voluptate illum voluptatum iusto dolor
+            laboriosam quisquam a, blanditiis repudiandae nihil debitis?
+          </p>
+          <p class="differentcontent">
+            In hac habitasse platea dictumst. Sed nec venenatis odio. Nulla
+            faucibus ipsum sed faucibus accumsan. Donec rhoncus luctus.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- footer is here -->
+    <footer>
+      <div class="footercontent flex">
+        <div class="footer_left flex">
+          <div class=""><span class="footer_logo">LOGO</span></div>
+          <div class="footer_input">
+            <input
+              type="email"
+              placeholder="Email"
+              class="footer_email_input"
+            />
+          </div>
+          <div>
+            <p class="footerparagraph">
+              Stay in touch with us for the freshest products!
+            </p>
+          </div>
+        </div>
+        <div class="footer_right flex">
+          <div class="footer_li flex">
+            <ul class="footer_list">
+              <li class="footer_list-item"><a href="index.html">home</a></li>
+              <li class="footer_list-item"><a href="#">discovery</a></li>
+              <li class="footer_list-item"><a href="#">photos</a></li>
+              <li class="footer_list-item"><a href="#">contact</a></li>
+            </ul>
+            <ul class="footer_list">
+              <li class="footer_list-item"><a href="#">about</a></li>
+              <li class="footer_list-item"><a href="#">help</a></li>
+              <li class="footer_list-item"><a href="#">terms</a></li>
+              <li class="footer_list-item"><a href="#">guidlines</a></li>
+            </ul>
+            <ul class="footer_list">
+              <li class="footer_list-item"><a href="#">testimonials</a></li>
+              <li class="footer_list-item"><a href="#">advertise</a></li>
+              <li class="footer_list-item"><a href="#">integrations</a></li>
+              <li class="footer_list-item"><a href="#">careers</a></li>
+            </ul>
+          </div>
+          <div class="contacticons flex">
+            <a href="#"><img src="./images/instagram.png" alt="image" /></a>
+            <a href="#"><img src="./images/twitter.png" alt="image" /></a>
+            <a href="#"><img src="./images/facebook.png" alt="image" /></a>
+            <a href="#"><img src="./images/web.png" alt="image" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="desktopfooter flex">
+        <div class="footer_left flex">
+          <div class=""><span class="footer_logo">LOGO</span></div>
+          <div class="footer_li flex">
+            <ul class="footer_list">
+              <li class="footer_list-item"><a href="index.html">home</a></li>
+              <li class="footer_list-item"><a href="#">discovery</a></li>
+              <li class="footer_list-item"><a href="#">photos</a></li>
+              <li class="footer_list-item"><a href="#">contact</a></li>
+            </ul>
+            <ul class="footer_list">
+              <li class="footer_list-item"><a href="#">about</a></li>
+              <li class="footer_list-item"><a href="#">help</a></li>
+              <li class="footer_list-item"><a href="#">terms</a></li>
+              <li class="footer_list-item"><a href="#">guidlines</a></li>
+            </ul>
+            <ul class="footer_list">
+              <li class="footer_list-item"><a href="#">testimonials</a></li>
+              <li class="footer_list-item"><a href="#">advertise</a></li>
+              <li class="footer_list-item"><a href="#">integrations</a></li>
+              <li class="footer_list-item"><a href="#">careers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerright flex">
+          <div class="footer_input">
+            <input
+              type="email"
+              placeholder="Email"
+              class="footer_email_input"
+            />
+          </div>
+          <div class="contacticons flex">
+            <a href="#"><img src="./images/instagram.png" alt="image" /></a>
+            <a href="#"><img src="./images/twitter.png" alt="image" /></a>
+            <a href="#"><img src="./images/facebook.png" alt="image" /></a>
+            <a href="#"><img src="./images/web.png" alt="image" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
